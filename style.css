@@ -36,10 +36,15 @@ p {
   padding: 0.7em 1em;
   background: var(--clr-accent, #484849);
   border-radius: 0.25em;
-  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
-  transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, opacity 250ms linear;
-  transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  -webkit-transition: opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out,
+ opacity 250ms linear;
+  transition: transform 250ms ease-in-out,
+ opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
 }
 
 .btn:hover,
@@ -65,7 +70,8 @@ p {
 
 @supports (background-blend-mode: multiply) {
   .hero {
-    background: url(https://images.pexels.com/photos/17465/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260), radial-gradient(#444, #111);
+    background: url(https://images.pexels.com/photos/17465/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260), 
+      radial-gradient(#444, #111);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
