@@ -9,6 +9,7 @@ body {
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
   line-height: 1.6;
+  overflow: hidden;
 }
 
 h1,
@@ -19,6 +20,7 @@ p {
 .container {
   width: 85%;
   max-width: 65em;
+  min-height: 98vh;
   margin: 0 auto;
 }
 
